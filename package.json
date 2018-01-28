@@ -1,0 +1,74 @@
+{
+  "name": "historical-map-site",
+  "version": "0.0.1",
+  "description": "Interactive historical maps",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/marko/bin/markoc server/middlewares;grunt build;webpack --progress --colors --env.mode=dev;webpack --progress --colors --env.mode=build;grunt rev",
+    "dev": "grunt dev",
+    "webpack-dev": "node dev-server.js",
+    "start": "node index.js",
+    "test": "",
+    "lint": "eslint --ext .js, .",
+    "functional": "protractor ./tests/functional/local.conf.js"
+  },
+  "author": "Zhi Qu",
+  "license": "GNU GPLv3",
+  "keywords": [
+    "map",
+    "history",
+    "node"
+  ],
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "compression": "^1.6.2",
+    "express": "^4.15.4",
+    "fumble": "^0.1.2",
+    "http-status": "^1.0.1",
+    "marko": "^4.7.4",
+    "memwatch-next": "^0.3.0",
+    "validator": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.0.0",
+    "css-loader": "^0.28.0",
+    "eslint": "^4.0.0",
+    "eslint-loader": "^1.7.1",
+    "ghooks": "^2.0.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-webpack": "^3.0.0",
+    "ip": "^1.1.5",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "echo pre-commit"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015"
+      ]
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
+}
