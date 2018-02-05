@@ -1,1 +1,25 @@
-<p>Hello</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
+        <meta name="referrer" content="origin" />
+        <link rel="icon" sizes="any" href="https://s.yimg.com/os/mit/media/p/common/images/favicon_new-7483e38.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="application-name" content="Map" />
+        <link if (data.cssPath) href="${data.cssPath}" rel="stylesheet" type="text/css" />
+        <meta http-equiv="x-dns-prefetch-control" content="on" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <style></style>
+    </head>
+    <body>
+        <!-- START OF POLYFILLS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.0/es6-promise.js"></script>
+        <script>ES6Promise.polyfill()</script>
+        <!-- END OF POLYFILLS -->
+        <script if(data.devServerPath) src="${data.devServerPath}"></script>
+        <script src="${data.jsPath}"></script>
+        <script></script>
+        <p>Hello World!!!</p>
+    </body>
+</html>

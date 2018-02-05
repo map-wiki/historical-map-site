@@ -1,3 +1,12 @@
+dist/
+serverDist/
+npm-*.log
+*-debug.log
+.DS_Store
+._.DS_Store
+*.marko.js
+sftp-config.json
+
 # Logs
 logs
 *.log
@@ -56,4 +65,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

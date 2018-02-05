@@ -1,0 +1,7 @@
+{
+    "ignore": ["*.marko.js", "dist/*", "static/*"],
+    "ext": "js json marko",
+    "events": {
+        "start": "osascript -e 'display notification \"server started.\" with title \"nodemon\"'"
+    }
+}

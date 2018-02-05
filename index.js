@@ -4,7 +4,6 @@ const env = process.env.NODE_ENV;
 
 try {
     const memwatch = require('memwatch-next');
-
     memwatch.on('leak', info => {
         console.error('Map::Server:Memory leak detected:\n', info);
     });

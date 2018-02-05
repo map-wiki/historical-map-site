@@ -1,6 +1,6 @@
 'use strict';
-
-const compress = require('compression');
+import compress from 'compression';
+// const compress = require('compression');
 const express = require('express');
 const Promise = require('bluebird');
 const httpStatus = require('http-status');
